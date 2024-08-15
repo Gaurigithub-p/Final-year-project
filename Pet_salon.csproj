@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69DA6576-10FD-442E-B49F-437DC50A9419}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Pet_salon</RootNamespace>
+    <AssemblyName>Pet_salon</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APPOINMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APPOINMENT.Designer.cs">
+      <DependentUpon>APPOINMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINDASHBOARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMINDASHBOARD.Designer.cs">
+      <DependentUpon>ADMINDASHBOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADDPRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADDPRODUCT.Designer.cs">
+      <DependentUpon>ADDPRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APBOARDING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APBOARDING.Designer.cs">
+      <DependentUpon>APBOARDING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APGROOMING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APGROOMING.Designer.cs">
+      <DependentUpon>APGROOMING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ATTENDANCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ATTENDANCE.Designer.cs">
+      <DependentUpon>ATTENDANCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CATEGORY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CATEGORY.Designer.cs">
+      <DependentUpon>CATEGORY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="G_SERVICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_SERVICE.Designer.cs">
+      <DependentUpon>G_SERVICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SERVICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SERVICE.Designer.cs">
+      <DependentUpon>SERVICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function.cs" />
+    <Compile Include="VALIDITYPRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VALIDITYPRODUCT.Designer.cs">
+      <DependentUpon>VALIDITYPRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SPLASH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPLASH.Designer.cs">
+      <DependentUpon>SPLASH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DASHBOARD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DASHBOARD.Designer.cs">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOMER.Designer.cs">
+      <DependentUpon>CUSTOMER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PET.Designer.cs">
+      <DependentUpon>PET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GROOMING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GROOMING.Designer.cs">
+      <DependentUpon>GROOMING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYEE.Designer.cs">
+      <DependentUpon>EMPLOYEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="APPOINMENT.resx">
+      <DependentUpon>APPOINMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMINDASHBOARD.resx">
+      <DependentUpon>ADMINDASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADDPRODUCT.resx">
+      <DependentUpon>ADDPRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APBOARDING.resx">
+      <DependentUpon>APBOARDING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APGROOMING.resx">
+      <DependentUpon>APGROOMING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATTENDANCE.resx">
+      <DependentUpon>ATTENDANCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CATEGORY.resx">
+      <DependentUpon>CATEGORY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_SERVICE.resx">
+      <DependentUpon>G_SERVICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SERVICE.resx">
+      <DependentUpon>SERVICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VALIDITYPRODUCT.resx">
+      <DependentUpon>VALIDITYPRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPLASH.resx">
+      <DependentUpon>SPLASH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DASHBOARD.resx">
+      <DependentUpon>DASHBOARD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOMER.resx">
+      <DependentUpon>CUSTOMER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PET.resx">
+      <DependentUpon>PET.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GROOMING.resx">
+      <DependentUpon>GROOMING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYEE.resx">
+      <DependentUpon>EMPLOYEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Petsaloonlogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
